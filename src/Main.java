@@ -16,8 +16,11 @@ public class Main {
             System.out.println("Имя -" + names[i] + " Возраст - " + ages[i]);
             
         }
-        Person sarah = Person.Person("Sarah", 30);
-        System.out.println("sarah.name = " + sarah.name);
-        System.out.println("sarah.age = " + sarah.age);
+        Person sarah = new Person("Sarah", 30);
+        System.out.println("sarah.name = " + sarah.getName());
+        System.out.println("sarah.age = " + sarah.getAge());
+        sarah.setAge(31);
+        System.out.println("sarah.getAge() = " + sarah.getAge());
+        Person john = new Person("john",13);
     }
 }

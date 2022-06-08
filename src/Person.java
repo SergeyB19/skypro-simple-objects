@@ -1,12 +1,22 @@
 public class Person {
-    String name;
-    int age;
+    private String name;
+    private int age;
 
-    public static Person Person(String name, int age) {
-        Person person = new Person();
-        person.name = name;
-        person.age = age;
-        return person;
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
 
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getAge() {
+        return this.age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
